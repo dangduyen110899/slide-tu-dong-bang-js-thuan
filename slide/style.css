@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 800px;
+    margin: 0 auto;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.slides {
+    width: 800px;
+    height: 304px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides .wrap {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left ease-in-out 0.5s;
+
+}
+
+.slides .button .prev,
+.slides .button .next {
+    width: 48px;
+    height: 32px;
+    font-size: 40px;
+    padding-bottom: 10px;
+    /* display: flex; */
+    color: #fff;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    /* ko cho phep boi den hay copy */
+    opacity: 0.7;
+    transform: translateY(-50%);
+    /* chinh giua theo chieu doc cua slide */
+    border-radius: 3px;
+    display: none;
+}
+
+.slides:hover .button .prev,
+.slides:hover .button .next {
+    display: flex;
+}
+
+.slides .button .prev {
+    left: 20px;
+}
+
+.slides .button .next {
+    right: 20px;
+}
+
+.slides .button span {
+    display: block;
+
+}
